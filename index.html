@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaniKinects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.jpg" width="150">
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section id="sobre">   
+       <h1>Transformamos o tráfego em energia para o saneamento sustentável    </h1> 
+       <h2>Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling. </h2>
+       <button onclick="">saiba mais</button>
+    </section>
+
+    <section id="objetivo">
+
+        <h1>Nosso objetivo</h1>
+        <p>O objetivo central deste projeto é promover a melhoria do sistema de saneamento básico da cidade de Sorocaba, garantindo maior eficiência, qualidade e sustentabilidade no fornecimento de água potável, coleta e tratamento de esgoto. 	A iniciativa busca não apenas corrigir problemas ainda existentes no atendimento à população, como a igualdade de serviços para todos e a redução das perdas no sistema de abastecimento, mas também contribuir para o avanço tecnológico do município, implementando uma solução inovadora que eleva os padrões de gestão, monitoramento e operação da cidade. </p>
+
+    </section>
+
+    <section id="rodovia raposo tavares">
+
+        <h1>Rodovia raposo tavares</h1>
+
+        <h2>Geraçao de energia</h2>
+        <h3>Pisos cinéticos instalados em rodovias convertem o movimento dos veículos em eletricidade.</h3>
+
+        <h2>Armazenamento e aplicação</h2>
+        <h3>A energia gerada é armazenada em baterias e utilizada em serviços públicos como iluminação e recarga elétrica.</h3>
+
+        <h2>Impactos positivos</h2>
+        <h3>Reduz emissões de carbono, depende menos de energia não renovável e diminui custos operacionais urbanos.</h3>
+
+         <img src="raposo.jpg" width="300">
+
+    </section>
+
+    <section id="justificativa">
+
+        <h1>Justificativa</h1>
+
+        <h2>Alta densidade de tráfego.</h2>
+
+        <h2>Busca por soluções energéticas sustentáveis.</h2>
+
+        <h2>Economia de energia e redução de carbono.</h2>
+
+        <img src="justificativa.png" width="300">
+
+    </section>
+
+    <section id="funcionamento">
+
+        <h1>Funcionamento</h1>
+
+        <h2>Piso cinético</h2>
+        <h3>Pessoas caminhando geram energia mecânica, que é convertida em eletricidade pelo piso cinético</h3>
+
+        <h2>Armazenamento com baterias LiFePO</h2>
+        <h3>A energia gerada é armazenada em baterias de lítio-ferro-fosfato (LiFePO₄), conhecidas por sua segurança, longa vida útil e alta eficiência.</h3>
+
+        <h2>Sistema de tratamento/bombeamento</h2>
+        <h3>A energia armazenada alimenta bombas ou sistemas de tratamento de água, por exemplo em sanitários ecológicos ou irrigação inteligente.</h3>
+
+                <img src="piso cinetico.png" width="300">
+
+    </section>
+
+    <section id="escopos-e-estimativas">
+
+        <h1>Escopos e Estimativas</h1>
+
+        <form id="tabela-energia" style="max-width:350px;">
+    <label>Área Instalada (m²):<br>
+      <input type="number" id="area" value="500">
+    </label><br><br>
+    <label>Energia Gerada (kWh):<br>
+      <input type="number" id="gerada" value="1900">
+    </label><br><br>
+    <label>Consumo do Sistema (kWh):<br>
+      <input type="number" id="consumo" value="1200">
+    </label><br><br>
+    <label>Excedente (kWh):<br>
+      <span id="excedente" style="color:blue;font-weight:bold;">700</span>
+    </label><br><br>
+    <button type="button" id="btn-testar">Testar</button>
+    <div style="color:green;margin-top:10px;font-weight:bold;">
+    </div>
+  </form>
+  <script>
+  function atualizarExcedente() {
+    const gerada = Number(document.getElementById('gerada').value);
+    const consumo = Number(document.getElementById('consumo').value);
+    const excedente = gerada - consumo;
+    document.getElementById('excedente').textContent = excedente;
+  }
+  document.getElementById('btn-testar').onclick = atualizarExcedente;
+</script>
+
+<section id="custos e financiamento">
+
+    <h1>Custo e financiamento</h1>
+
+    <h2>orçamento estimado</h2>
+    <ul>
+        <nav>Monitoramento e integração: R$ 50.000</nav>
+        <nav>Infraestrutura e instalação: R$ 150.000</nav>
+        <nav>Sistema de baterias (LiFePO₄): R$ 200.000</nav>
+        <nav>Pisos cinéticos (1.000 m²): R$ 500.000</nav>
+    </ul>
+    
+    <h1>Fontes possíveis de recursos:</h1>
+
+    <ul>
+        <nav>Parcerias Público-Privadas (PPPs)</nav>
+        <nav>Leis de Incentivo Fiscal (ex: Lei Rouanet, Lei do Bem)</nav>  
+        <nav>Fundos ESG e de Sustentabilidade </nav>
+        <nav>Editais de inovação e eficiência energética</nav>
+    </ul>
+
+</section>
+
+</body>
+</html>

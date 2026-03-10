@@ -1,0 +1,45 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #4E4444;
+  color: #fcfcfc;
+  padding: 5px 5px;
+  margin: 0;
+}
+
+header div {
+    width: 1000px;
+}
+ 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0px;
+}
+ 
+ 
+h1 {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+ 
+h2 {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    align-items: center;
+}
+ 
+section {
+    background-color: #4E4444;
+    color: #f3f2f2;
+    padding: 6px 16px;
+    border-radius: 0px;
+}
+head {  
+  margin: auto;
+  background-color: #ffffff;
+}
