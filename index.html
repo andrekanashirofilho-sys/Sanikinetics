@@ -47,7 +47,7 @@
         <h2>Impactos positivos</h2>
         <h3>Reduz emissões de carbono, depende menos de energia não renovável e diminui custos operacionais urbanos.</h3>
 
-         <img src="raposo.jpg" width="300">
+         <img src="raposo.jpg" width="3000">
 
     </section>
 
@@ -61,7 +61,7 @@
 
         <h2>Economia de energia e redução de carbono.</h2>
 
-        <img src="justificativa.png" width="300">
+        <img src="justificativa.png" width="3000">
 
     </section>
 
@@ -78,41 +78,9 @@
         <h2>Sistema de tratamento/bombeamento</h2>
         <h3>A energia armazenada alimenta bombas ou sistemas de tratamento de água, por exemplo em sanitários ecológicos ou irrigação inteligente.</h3>
 
-                <img src="piso cinetico.png" width="300">
+                <img src="piso cinetico.png" width="3000">
 
     </section>
-
-    <section id="escopos-e-estimativas">
-
-        <h1>Escopos e Estimativas</h1>
-
-        <form id="tabela-energia" style="max-width:350px;">
-    <label>Área Instalada (m²):<br>
-      <input type="number" id="area" value="500">
-    </label><br><br>
-    <label>Energia Gerada (kWh):<br>
-      <input type="number" id="gerada" value="1900">
-    </label><br><br>
-    <label>Consumo do Sistema (kWh):<br>
-      <input type="number" id="consumo" value="1200">
-    </label><br><br>
-    <label>Excedente (kWh):<br>
-      <span id="excedente" style="color:blue;font-weight:bold;">700</span>
-    </label><br><br>
-    <button type="button" id="btn-testar">Testar</button>
-    <div style="color:green;margin-top:10px;font-weight:bold;">
-    </div>
-  </form>
-  <script>
-  function atualizarExcedente() {
-    const gerada = Number(document.getElementById('gerada').value);
-    const consumo = Number(document.getElementById('consumo').value);
-    const excedente = gerada - consumo;
-    document.getElementById('excedente').textContent = excedente;
-  }
-  document.getElementById('btn-testar').onclick = atualizarExcedente;
-</script>
-
 <section id="custos e financiamento">
 
     <h1>Custo e financiamento</h1>
@@ -135,6 +103,71 @@
     </ul>
 
 </section>
+
+<section class="cronograma-wrapper">
+    <div class="container">
+        <h1>Cronograma</h1>
+        <h2>Linha do Tempo do Projeto</h2>
+        <div class="cronograma-container">
+            <div class="cronograma-item">
+                <div class="icon-circle">1</div> <h3>Viabilidade</h3>
+                <p>Análise técnica, econômica e ambiental do projeto.</p>
+            </div>
+            <div class="cronograma-item">
+                <div class="icon-circle">2</div>
+                <h3>Licenciamento</h3>
+                <p>Obtenção de autorizações e licenças ambientais.</p>
+            </div>
+            <div class="cronograma-item">
+                <div class="icon-circle">3</div>
+                <h3>Instalação</h3>
+                <p>Montagem dos pisos e sistemas de energia.</p>
+            </div>
+            <div class="cronograma-item">
+                <div class="icon-circle">4</div>
+                <h3>Testes</h3>
+                <p>Verificação do funcionamento e calibração de desempenho.</p>
+            </div>
+            <div class="cronograma-item">
+                <div class="icon-circle">5</div>
+                <h3>Entrega</h3>
+                <p>Fase de operação com acompanhamento do sistema público.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="indicadores-de-sucesso" class="container">
+    <h1>Indicadores de Sucesso</h1>
+    <ul>
+        <li><strong>Geração mínima esperada:</strong> 190 mil veículos/dia -> 1.900 kWh/dia</li>
+        <li><strong>Autonomia energética do sistema:</strong> Sustentação total da iluminação, monitoramento e recarga local</li>
+        <li><strong>Redução de custos:</strong> Menor dependência de energia da rede pública</li>
+        <li><strong>Retorno sobre o investimento (ROI):</strong> Estimado em até 10 anos</li>
+    </ul>
+</section>
+
+
+<footer>
+    <div class="container">
+        <h1>Contato</h1>
+        <p>Fale conosco diretamente:</p>
+        <p>Preencha seu nome, e-mail e mensagem para que nossa equipe retorne o mais breve possível.</p>
+
+        <div class="contact-details">
+            <p><strong>Outros canais:</strong></p>
+            <ul>
+                <li>E-mail institucional: <a href="mailto:contato@sanikinects.com.br">contato@sanikinects.com.br</a></li>
+                <li>Telefone / WhatsApp: <strong>(11) 98765-4321</strong></li>
+                <li>Redes Sociais:</li>
+                <li>Instagram — <a href="https://instagram.com/ecoenergiaurbana" target="_blank">@ecoenergiaurbana</a></li>
+                <li>LinkedIn — <a href="https://linkedin.com/company/sanikinects" target="_blank">/sanikinects</a></li>
+                <li>YouTube — <a href="https://youtube.com/sanikinects" target="_blank">Vídeos e demonstrações</a></li>
+            </ul>
+        </div>
+        <p class="copyright">© 2023 SaniKinects. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 </body>
 </html>
